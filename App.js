@@ -15,6 +15,7 @@ app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(contactRoute);
 
+
 app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'view', '404.html'));
 });
